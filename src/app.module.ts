@@ -3,7 +3,6 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TodoModule } from './models/todo/todo.module';
 import { AppController } from './app.controller';
-import { AppService } from './app.service';
 
 // The @Module decorator defines a module in NestJS.
 // A module is a class annotated with a @Module() decorator, which provides metadata that NestJS uses to organize the application structure.
@@ -33,7 +32,7 @@ import { AppService } from './app.service';
   controllers: [AppController],
   // The providers array specifies the providers that should be instantiated by the NestJS injector and made available in this module.
   // Providers are typically services that handle the business logic of the application.
-  providers: [AppService],
+  providers: [],
 })
 // The AppModule class is the root module of the application.
 export class AppModule {}

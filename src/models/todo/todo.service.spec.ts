@@ -5,7 +5,7 @@ import { getModelToken } from '@nestjs/mongoose';
 import { Model, Document } from 'mongoose';
 import { TodoService } from './service/todo.service';
 import { Todo, TodoDocument } from './schema/todo.schema';
-import { CreateTodoDto } from './dtos/todo.dto';
+import { CreateTodoDto } from './dtos/create-todo.dto';
 
 const mockTodo = {
   title: 'Test Todo',
