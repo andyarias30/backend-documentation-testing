@@ -4,7 +4,7 @@ import { CreateTodoDto } from '../dtos/create-todo.dto';
 import { UpdateTodoDto } from '../dtos/update-todo.dto';
 import { Todo } from '../schema/todo.schema';
 
-@Controller()
+@Controller('todo')
 export class TodoController {
   constructor(private readonly todoService: TodoService) {}
 
