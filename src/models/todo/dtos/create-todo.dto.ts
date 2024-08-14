@@ -2,7 +2,8 @@ import { IsString, IsOptional, IsBoolean , IsNotEmpty } from 'class-validator';
 
 export class CreateTodoDto {
   @IsString()
-  readonly title: string;
+  @IsNotEmpty()
+  readonly title?: string;
 
   @IsString()
   @IsOptional()
